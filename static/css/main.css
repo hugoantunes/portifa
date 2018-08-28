@@ -1,0 +1,25 @@
+body{
+    background-color: #020202 !important;
+    margin-bottom:50px;
+}
+
+.box-logo{
+    margin-top: 140px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 170px;
+    border-radius: 100px;
+}
+
+footer.page-footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
