@@ -14,7 +14,7 @@ body{
 .logo img{
     width: 170px;
     border-radius: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 footer.page-footer{
@@ -23,6 +23,7 @@ footer.page-footer{
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
+    font-size: 11px;
 }
 
 .social{
