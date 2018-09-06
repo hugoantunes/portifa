@@ -19,6 +19,7 @@ body{
 
 .social{
     color: white;
+    float: right;
 }
 .social a{
     font-size: 10px;
