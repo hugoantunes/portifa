@@ -1883,3 +1883,7 @@ background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Fir
 .cid-qyuZH0oPRJ{
   color: white;
 }
+
+a.navbar-caption.text-black.display-4 {
+    font-size: 1.5rem;
+}
