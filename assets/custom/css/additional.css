@@ -1887,3 +1887,23 @@ background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Fir
 a.navbar-caption.text-black.display-4 {
     font-size: 1.5rem;
 }
+
+.menu.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+
+}
+
+.menu {
+    position: fixed;
+    background: linear-gradient(to top, #4389A2, #5C258D)!important;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+
+}
