@@ -1751,6 +1751,12 @@ body {
 .cid-qyucOJY58V .mbr-author-desc {
   color: #232;
 }
+
+.cid-qyucOJY58V .mbr-author-desc ul{
+  list-style: none;
+  padding-left: 0;
+}
+
 .cid-qyucOJY58V .testimonial-text SPAN {
   color: #c1c1c1;
 }
