@@ -9,7 +9,56 @@
     <meta name="googlebot" content="noindex">
   <!-- <script type="text/javascript" src="assets/instafeed/instafeed.min.js"></script> -->
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../assets/theme/css/style.css">
     <style>
+        .tag:hover {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+        }
+        .tag{
+            height: 85px;
+            width: 251px;
+            position: absolute;
+            bottom: 35%;
+            left: 30%;
+
+            background-image: url(../assets/images/tag_ckick.png);
+            background-size: cover;
+
+            -webkit-transition-duration: 2s;
+            -moz-transition-duration: 2s;
+            -o-transition-duration: 2s;
+            transition-duration: 2s;
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            transition-property: transform;
+        }
+        .tag:active{
+            height: 75px;
+            background-image: url(../assets/images/tag.png);
+        }
+        .tag-space{
+            height: 435px;
+        }
+        .container{
+          /*border: 3px solid green;*/
+
+        }
+        .top{
+            height: 100px;
+        }
+        .tag{
+            height: 100px
+            width: 50%;
+        }
+        section{
+            background: none;
+        }
         body{
             background-color: black;
             background-image: url(../assets/images/planet.gif);
@@ -33,14 +82,33 @@
                 background-image: url(../assets/images/planet_mobile.gif);
             }
         }
-        body {
 
     </style>
 </head>
 <body>
-    <span id="click"></span>
+<section class="mbr-section article content12 cid-qyuinV19zB" id="content12-9" data-rv-view="184">
+    <div class="container top">
+    </div>
+</section>
+<div class="container">
+    <div class="row tag-space">
+        <dir class="col">
+
+        </dir>
+        <dir class="col">
+            <div class='tag'>
+        </dir>
+        <dir class="col">
+
+        </dir>
+    </div>
+</div>
+
 </body>
 <script src="../assets/web/assets/jquery/jquery.min.js"></script>
+<script src="../assets/popper/popper.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
 <script type="text/javascript">
 // var myVideo = document.getElementById("planet");
 $(document).ready(function() {
