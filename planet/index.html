@@ -12,6 +12,9 @@
     <style>
         body{
             background-color: black;
+            background-image: url(../assets/images/planet.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         #click {
             display: block;
@@ -23,28 +26,16 @@
             bottom: 20%;
             right: 40%;
         }
-        img{
-            height: 100%;
-            width: 100%;
-        }
-        @media (max-width: 390px){
-            img {
-                width: 1036px;
-                position: fixed;
-                left: -334px;
+        @media (max-width: 500px){
+            body {
+                background-image: url(../assets/images/planet_mobile.gif);
             }
         }
-        @media (min-width: 390px) and (max-width: 600px){
-            img{
-                width: 1309px;
-                position: fixed;
-                left: -447px;
-            }
-        }
+        body {
+
     </style>
 </head>
 <body>
-    <img src="../assets/images/planet.gif" type="video/mp4">
     <span id="click"></span>
 </body>
 <script src="../assets/web/assets/jquery/jquery.min.js"></script>
