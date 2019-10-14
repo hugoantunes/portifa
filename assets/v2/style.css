@@ -1,0 +1,85 @@
+/*header*/
+
+.header-section{
+    background-color: #f15a24;
+    background-image: url(header1.png);
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+.header-container{
+
+}
+
+.header-container .eye{
+    margin-bottom: 120px;
+}
+
+/*welcome*/
+.welcome-section{
+    background-color: #ff7bac;
+    background-image: url(header2.png);
+    background-position: bottom;
+    background-size: 100% 60%;
+}
+
+.welcome-container{
+    color: #f15a24;
+    padding-top: 20px;
+}
+
+
+.welcome-container .introduction{
+    font-size: 40px;
+}
+
+.welcome-container .arrows{
+    text-align: center;
+    padding-bottom: 170px;
+}
+
+
+/*expertise*/
+.xp-section{
+    background-color: #12A05C;
+    background-image: url(header3.png);
+    background-position: bottom;
+    background-size: 100% 60%;
+}
+
+.xp-container{
+    color: white
+}
+
+.xp-container .title{
+    text-align: center;
+    font-size:40px;
+}
+
+.xp-container .description{
+    padding-bottom: 170px;
+}
+
+/*showreel*/
+.showreel-section{
+    background-color: #FFD73D;
+    background-image: url(header4.png);
+    background-position: bottom;
+    background-size: 100% 60%;
+}
+
+.showreel-container{
+    color: #f15a24
+}
+
+.showreel-container .title{
+    text-align: center;
+    font-size:40px;
+}
+
+.showreel-container .main{
+}
+
+.showreel-container .carrossel{
+    padding-bottom: 170px;
+}
