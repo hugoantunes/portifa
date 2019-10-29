@@ -11,14 +11,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "theboldfont";
-  src:url("../fonts/theboldfont.woff") format("woff"),
-    url("../fonts/theboldfont.ttf") format("truetype"),
-  font-weight: normal;
-  font-style: normal;
-}
-
 [data-icon]:before {
   font-family: "socicon" !important;
   content: attr(data-icon);

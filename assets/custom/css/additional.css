@@ -3,17 +3,8 @@
 
 @font-face {
   font-family: "theboldfont";
-  src:url("theboldfont.woff") format("woff"),
-    url("theboldfont.ttf") format("truetype"),
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "theboldfont";
-  src:url("../../theboldfont.woff") format("woff"),
-    url("../../theboldfont.ttf") format("truetype"),
+  src:url("https://aelnaan.com/assets/fonts/theboldfont.woff") format("woff"),
+    url("https://aelnaan.com/assets/fonts/theboldfont.ttf") format("truetype"),
   font-weight: normal;
   font-style: normal;
 }
