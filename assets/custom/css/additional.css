@@ -531,6 +531,7 @@ a.text-black:focus {
 }
 .mbr-section-btn a.btn:not(.btn-form) {
   border-radius: 100px;
+  color: #FFD73D;
 }
 .mbr-section-btn a.btn:not(.btn-form):hover {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
@@ -1859,15 +1860,11 @@ background: linear-gradient(to right, #5C258D, #4389A2, #5C258D); /* W3C, IE 10+
 .cid-qyuZH0oPRJ {
   padding-top: 45px;
   padding-bottom: 45px;
-background: #5C258D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+background: #ff7bac;  /* fallback for old browsers */
 }
 .cid-qyuZH0oPRJ .mbr-iconfont-social {
   font-size: 32px;
-  color: white;
+  color: #FFD73D;
 }
 .cid-qyuZH0oPRJ .social-list a:focus {
   text-decoration: none;
@@ -1881,7 +1878,7 @@ background: linear-gradient(to top, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Fir
   color: #232323;
 }
 .cid-qyuZH0oPRJ{
-  color: white;
+  color: #FFD73D;
 }
 
 a.navbar-caption.text-black.display-4 {
@@ -1906,4 +1903,7 @@ a.navbar-caption.text-black.display-4 {
     visibility: hidden;
     transition: visibility 0s linear 300ms, opacity 300ms;
 
+}
+body{
+  background-color:#ff7bac!important;
 }
