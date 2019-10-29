@@ -3,8 +3,10 @@
 
 @font-face {
   font-family: "theboldfont";
-  src:url("https://aelnaan.com/assets/fonts/theboldfont.woff") format("woff"),
-    url("https://aelnaan.com/assets/fonts/theboldfont.ttf") format("truetype");
+  src:
+    url("../../fonts/stheboldfont-webfont.woff2") format("woff2"),
+    url("../../fonts/theboldfont.woff") format("woff"),
+    url("../../fonts/theboldfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1910,5 +1912,5 @@ a.navbar-caption.text-black.display-4 {
 }
 body{
   background-color:#ff7bac!important;
-  font-family: 'theboldfont';
+  font-family: "theboldfont";
 }
