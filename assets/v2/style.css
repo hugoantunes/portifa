@@ -54,14 +54,21 @@
     }
 }
 
-.header-section{
+body{
+    font-family: "source-serif-variable";
+}
+
+strong{
+    font-family: "theboldfont";
+}
+
+.header-section {
     background-color: #ff7bac;
     background-repeat: no-repeat;
     background-image: url(header1.svg);
 }
 
-.eye{
-    font-family: "source-serif-variable";
+.eye {
     color: #ff7bac;
 }
 
@@ -70,22 +77,46 @@
     background-color: #ff7bac;
     background-image: url(header2.svg);
     background-position: bottom;
-    background-size: contain;
-    padding-bottom: 190px;
+    background-repeat: no-repeat;
+    padding-bottom: 110px;
+    padding-top: 70px;
 }
 
 .welcome-container{
     color: #f15a24;
 }
 
-
 .welcome-container .introduction{
+    height: 350px;
+}
+
+.welcome-container .introduction p{
     font-size: 40px;
+}
+.welcome-container .introduction strong{
+    font-size: 46px;
 }
 
 .welcome-container .arrows{
-    text-align: center;
+    text-align: left;
+    font-size: 25px;
 }
+
+.welcome-container .arrows img{
+    height: 50px;
+    margin-left: 20px;
+}
+
+.welcome-container .name{
+    text-align: center;
+    font-weight: lighter;
+    line-height: 40px;
+}
+
+
+
+
+
 
 
 /*expertise*/
