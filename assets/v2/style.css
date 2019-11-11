@@ -18,39 +18,51 @@
          url('../fonts/SourceSerifVariable-Roman.ttf') format('truetype');
 }
 
+@media (max-width: 575.98px) {
+    .header-section{
+        background-size: 160%;
+        padding-top: 20px;
+    }
+    .header-container .eye{
+        margin-left: 50px;
+    }
+    .eye {
+        font-size: 31px;
+    }
+    .eye img {
+        height: 40px;
+        margin-right: 9px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .header-container{
+        padding-top: 30px;
+    }
+    .eye{
+        font-size: 75px;
+    }
+    .eye img{
+        height: 140px;
+        margin-right: 15px;
+    }
+}
+
 .header-section{
     padding-bottom: 10px;
     background-color: #ff7bac;
-    background-image: url(header1.svg);
     background-repeat: no-repeat;
+    background-image: url(header1.svg);
 }
 
-.header-container{
-    padding-top: 30px;
-}
-
-.header-container .eye{
-    /*height: 110px;
-    position: relative;*/
-}
 .eye{
     font-family: "source-serif-variable";
-    font-size: 75px;
     color: #ff7bac;
 }
-
-.eye img{
-    height: 140px;
-    margin-right: 15px;
-
-    /*display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: -130px;
-    bottom: -20px;*/
-}
-
 
 /*welcome*/
 .welcome-section{
