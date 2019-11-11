@@ -19,6 +19,7 @@
 }
 
 @media (max-width: 575.98px) {
+    /*header*/
     .header-section{
     padding-bottom: 15px;
     padding-top: 10px;
@@ -32,6 +33,30 @@
         height: 80px;
         margin-right: 9px;
     }
+    /*end header*/
+
+    /*welcome*/
+    .welcome-section{
+        background-size: 850px;
+        padding-bottom: 75px;
+        padding-top: 60px;
+        background-position: -170px bottom;
+    }
+    .welcome-container .introduction{
+       height: 220px;
+    }
+
+    .welcome-container .arrows{
+        text-align: center;
+    }
+    .welcome-container .arrows{
+        font-size: 20px;
+    }
+    .welcome-container .arrows img {
+        height: 35px;
+        margin-left: 0px;
+    }
+    /*end welcome*/
 
 }
 
@@ -39,6 +64,7 @@
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+    /*header*/
     .header-section{
         padding-bottom: 10px;
     }
@@ -52,6 +78,30 @@
         height: 140px;
         margin-right: 15px;
     }
+    /*end header*/
+
+    /*welcome*/
+    .welcome-section{
+        padding-bottom: 110px;
+        padding-top: 70px;
+        background-position: bottom;
+    }
+    .welcome-container .introduction{
+       height: 350px;
+    }
+    .welcome-container .arrows{
+        text-align: left;
+    }
+    .welcome-container .arrows{
+        font-size: 25px;
+    }
+
+    .welcome-container .arrows img{
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    /*end welcome*/
 }
 
 body{
@@ -76,19 +126,13 @@ strong{
 .welcome-section{
     background-color: #ff7bac;
     background-image: url(header2.svg);
-    background-position: bottom;
     background-repeat: no-repeat;
-    padding-bottom: 110px;
-    padding-top: 70px;
 }
 
 .welcome-container{
     color: #f15a24;
 }
 
-.welcome-container .introduction{
-    height: 350px;
-}
 
 .welcome-container .introduction p{
     font-size: 40px;
@@ -97,27 +141,11 @@ strong{
     font-size: 46px;
 }
 
-.welcome-container .arrows{
-    text-align: left;
-    font-size: 25px;
-}
-
-.welcome-container .arrows img{
-    height: 50px;
-    margin-left: 20px;
-}
-
 .welcome-container .name{
     text-align: center;
     font-weight: lighter;
     line-height: 40px;
 }
-
-
-
-
-
-
 
 /*expertise*/
 .xp-section{
