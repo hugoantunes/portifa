@@ -106,6 +106,7 @@
 
 body{
     font-family: "source-serif-variable";
+    font-weight: lighter;
 }
 
 strong{
@@ -143,7 +144,6 @@ strong{
 
 .welcome-container .name{
     text-align: center;
-    font-weight: lighter;
     line-height: 40px;
 }
 
@@ -152,8 +152,8 @@ strong{
     background-color: #12A05C;
     background-image: url(header3.svg);
     background-position: bottom;
-    background-size: contain;
-    padding-bottom: 320px;
+    background-repeat: no-repeat;
+    padding-bottom: 230px;
 }
 
 .xp-container{
@@ -162,11 +162,15 @@ strong{
 
 .xp-container .title{
     text-align: center;
-    font-size:40px;
+    font-size: 46px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
 }
 
 .xp-container .description{
-
+    font-size: 21px;
+    line-height: normal;
+    letter-spacing: 1px;
 }
 
 /*showreel*/
