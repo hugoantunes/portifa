@@ -4,7 +4,8 @@
     background-color: #ff7bac;
     background-image: url(header1.svg);
     background-position: top;
-    background-size: contain;
+    background-size: auto;
+    padding-bottom: 72px;
 }
 
 .header-container{
@@ -13,7 +14,17 @@
 }
 
 .header-container .eye{
-
+    height: 110px;
+    /* width: 10px; */
+    position: relative;
+}
+.eye img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -130px;
+    bottom: -20px;
 }
 
 /*welcome*/
@@ -109,7 +120,7 @@
 }
 
 .white-section .white-container{
-    height: 500px;
+    height: 50px;
 }
 
 
