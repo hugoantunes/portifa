@@ -1,31 +1,56 @@
-/*header*/
+@font-face {
+  font-family: "theboldfont";
+  src:
+    url("../fonts/theboldfont.woff2") format("woff2"),
+    url("../fonts/theboldfont.woff") format("woff"),
+    url("../fonts/theboldfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+    font-family: 'source-serif-variable';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('../fonts/SourceSerifVariable-Roman.ttf.woff2') format('woff2'),
+         url('../fonts/SourceSerifVariable-Roman.ttf.woff') format('woff'),
+         url('../fonts/SourceSerifVariable-Roman.ttf') format('truetype');
+}
 
 .header-section{
+    padding-bottom: 10px;
     background-color: #ff7bac;
     background-image: url(header1.svg);
-    background-position: top;
-    background-size: auto;
-    padding-bottom: 72px;
+    background-repeat: no-repeat;
 }
 
 .header-container{
     padding-top: 30px;
-    padding-bottom: 20px;
 }
 
 .header-container .eye{
-    height: 110px;
-    /* width: 10px; */
-    position: relative;
+    /*height: 110px;
+    position: relative;*/
 }
+.eye{
+    font-family: "source-serif-variable";
+    font-size: 75px;
+    color: #ff7bac;
+}
+
 .eye img{
-    display: block;
+    height: 140px;
+    margin-right: 15px;
+
+    /*display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     left: -130px;
-    bottom: -20px;
+    bottom: -20px;*/
 }
+
 
 /*welcome*/
 .welcome-section{
