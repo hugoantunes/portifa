@@ -178,25 +178,45 @@ strong{
     background-color: #FFD73D;
     background-image: url(header4.svg);
     background-position: bottom;
-    background-size: contain;
-    padding-bottom: 300px;
-}
-
-.showreel-container{
-    color: #f15a24
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+    padding-top: 20px;
 }
 
 .showreel-container .title{
-    text-align: center;
-    font-size:40px;
+    color: #f15a24;
+    text-align: right;
+    font-size:46px;
+    margin-bottom: 30px;
 }
 
 .showreel-container .main{
+    background-color: #f15a24;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.showreel-container .works{
+    height: 200px;
+}
+
+.showreel-container .works div{
+    margin: 0;
+}
+.showreel-container .works .thumb{
+    background-color: #f15a24;
+    height: 50px;
 }
 
 .showreel-container .carrossel{
     padding-bottom: 170px;
 }
+
+
+
+
+
+
 
 .purple-section{
     background-color: #702855;
