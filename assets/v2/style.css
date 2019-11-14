@@ -129,6 +129,11 @@ strong{
     color: #f15a24;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
 .header-section {
     background-color: #ff7bac;
     background-repeat: no-repeat;
@@ -191,7 +196,7 @@ strong{
 .showreel-section{
     background-color: #FFD73D;
     background-image: url(header4.svg);
-    background-position: bottom;
+    background-position: center 1132px;
     background-repeat: no-repeat;
     padding-bottom: 150px;
     padding-top: 20px;
@@ -231,17 +236,54 @@ strong{
 }
 
 
-.purple-section{
+.cv-section{
     background-color: #702855;
     background-image: url(header5.svg);
     background-position: bottom;
-    background-size: contain;
-    padding-bottom: 300px;
+    background-repeat: no-repeat;
+    padding-bottom: 355px;
 }
 
-.purple-section .purple-container{
-    height: 500px;
+.cv-container .title{
+    margin-bottom: 50px;
 }
+
+.cv-section strong{
+    font-size: 46px;
+}
+
+.cv-section strong,
+.cv-section p{
+    color: #fff;
+}
+
+.cv-section .projects .year{
+    margin-bottom: 80px;
+}
+
+.cv-section .projects .year hr{
+    border: 2px solid;
+    border-color: #fff;
+}
+
+.cv-section .projects .year.last{
+    margin-bottom: 0px;
+}
+
+.cv-section .projects strong{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.cv-section .projects .jobs{
+    font-size: 21px;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+}
+
+
+
+
 
 .blue-section{
     background-color: #718FC1;
