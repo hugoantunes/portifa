@@ -133,14 +133,16 @@
     }
     /*end xp*/
 
+    /*showreel*/
     .showreel-section{
         background-position: center 1132px;
         padding-bottom: 150px;
     }
+    /*end showreel*/
 
     /* cv */
     .cv-section{
-        background-position: bottom;
+        background-position: center 770px;
         padding-bottom: 355px;
     }
     /*end cv*/
@@ -260,8 +262,9 @@ ul{
     line-height: 1.3rem;
     font-weight: normal;
 }
+/*end showreel*/
 
-
+/*cv*/
 .cv-section{
     background-color: #702855;
     background-image: url(header5.svg);
@@ -304,22 +307,52 @@ ul{
     line-height: 1.7rem;
     letter-spacing: 1px;
 }
+/*end cv*/
 
-
-
-
-
-.blue-section{
+/*contact*/
+.contact-section{
     background-color: #718FC1;
     background-image: url(header6.svg);
     background-position: bottom;
-    background-size: contain;
-}
-.blue-section .blue-container{
-    height: 500px;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
 }
 
+.contact-section p,
+.contact-section strong,
+.contact-section a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.contact-section strong{
+    font-size: 46px;
+}
+
+.contact-section .phone{
+    height: 380px;
+}
+
+.contact-section .social{
+    text-align: right;
+}
+
+.contact-section .social p{
+    font-size: 19px;
+}
+
+.contact-section .personal,
+.contact-section .social .social-list{
+    margin-top: 40px;
+}
+
+.contact-section .social .social-list a{
+    font-size: 40px;
+}
+/*end contact*/
+
+/*end*/
 .white-section .white-container{
-    height: 50px;
 }
-
+/*end end*/
