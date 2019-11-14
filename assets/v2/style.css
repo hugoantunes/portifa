@@ -83,6 +83,21 @@
     }
     /*end cv*/
 
+    .contact-section{
+        background-size: 840px;
+    }
+    .contact-section .phone{
+        height: 170px;
+    }
+
+    .end-section {
+        font-size: 13px;
+    }
+    .end-section span {
+        display: inline-block;
+        margin-left: 13px;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {}
@@ -146,6 +161,10 @@
         padding-bottom: 355px;
     }
     /*end cv*/
+
+    .contact-section .phone{
+        height: 380px;
+    }
 }
 
 body{
@@ -330,10 +349,6 @@ ul{
     font-size: 46px;
 }
 
-.contact-section .phone{
-    height: 380px;
-}
-
 .contact-section .social{
     text-align: right;
 }
@@ -359,5 +374,6 @@ ul{
 }
 .end-section .end-container .easter-egg{
     color: #fff;
+    font-size: 10px;
 }
 /*end end*/
