@@ -265,7 +265,7 @@ ul{
     height: 400px;
 }
 
-.showreel-container .works{
+.showreel-container .works div{
 }
 
 .showreel-container .works .thumb{
@@ -360,7 +360,7 @@ ul{
 
 .contact-section .personal,
 .contact-section .social .social-list{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .contact-section .social .social-list a{
