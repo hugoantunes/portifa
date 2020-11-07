@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 
     <link rel="stylesheet" href="assets/v2/style.css">
 </head>
@@ -80,7 +82,7 @@
             </div>
         </div>
         <div class="row justify-content-center works">
-            <div class="col-md-3">
+            <div>
                 <div class="thumb">
                 </div>
                 <div class="info">
@@ -88,7 +90,7 @@
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector. While this generates a more specific selector, column padding can still be further customized with spacing utilities.</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div>
                 <div class="thumb">
                 </div>
                 <div class="info">
@@ -96,7 +98,7 @@
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector.</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div>
                 <div class="thumb">
                 </div>
                 <div class="info">
@@ -104,7 +106,7 @@
                     <p></p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div>
                 <div class="thumb">
                 </div>
                 <div class="info">
@@ -113,6 +115,12 @@
                 </div>
             </div>
         </div>
+        <div class="my-slider">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- or ul.my-slider > li -->
     </div>
 </section>
 <section class="cv-section" id="" data-rv-view="171">
@@ -204,6 +212,16 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 <script type="text/javascript">
+      var slider = tns({
+    container: '.works',
+    items: 1,
+    gutter: 10,
+    fixedWidth: 300,
+    edgePadding: 20,
+    controls: false
+  });
 </script>
 </html>

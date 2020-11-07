@@ -202,6 +202,9 @@
     }
 }
 
+.tns-nav{
+    text-align: right;
+}
 body{
     font-family: "source-serif-variable";
     font-weight: lighter;
