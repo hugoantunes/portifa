@@ -22,7 +22,7 @@
     /*header*/
     .header-section{
         padding-bottom: 15px;
-        padding-top: 10px;
+        padding-top: 14px;
         background-position: -80px 0px;
         background-size: 930px;
     }
@@ -38,12 +38,12 @@
     /*welcome*/
     .welcome-section{
         background-size: 880px;
-        padding-bottom: 75px;
+        padding-bottom: 98px;
         padding-top: 60px;
         background-position: -200px bottom;
     }
     .welcome-container .introduction{
-       height: 220px;
+
     }
 
     .welcome-container .arrows{
@@ -123,12 +123,12 @@
 
     /*welcome*/
     .welcome-section{
-        padding-bottom: 110px;
-        padding-top: 70px;
+        padding-bottom: 180px;
+        padding-top: 50px;
         background-position: bottom;
     }
     .welcome-container .introduction{
-       height: 350px;
+
     }
     .welcome-container .arrows{
         text-align: left;
