@@ -17,8 +17,42 @@
          url('../fonts/SourceSerifVariable-Roman.ttf.woff') format('woff'),
          url('../fonts/SourceSerifVariable-Roman.ttf') format('truetype');
 }
+@media (max-width: 370px) {
+    .header-section {
+        padding-bottom: 20px;
+    }
+    .header-section .eye {
+        font-size: 0px;
+    }
+    .welcome-section {
+        background-size: 805px!important;
+    }
+    .welcome-container .introduction strong{
+        font-size: 40px!important;
+    }
+    .welcome-container .introduction p{
+        font-size: 30px!important;
+    }
 
-@media (max-width: 575.98px) {
+    .xp-container .title {
+        font-size: 37px!important;
+    }
+    .showreel-container .title {
+        font-size: 38px!important;
+    }
+    .cv-section strong {
+        font-size: 38px!important;
+    }
+    .contact-section strong {
+        line-height: 1.3em;
+    }
+    .end-section span {
+        padding-top: 5px;
+        margin-left: 0px!important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
     /*header*/
     .header-section{
         padding-bottom: 15px;
