@@ -185,8 +185,8 @@
 
     /*showreel*/
     .showreel-section{
-        background-position: center 1070px;
-        padding-bottom: 90px;
+        background-position: center bottom;
+        padding-bottom: 120px;
     }
     /*end showreel*/
 
@@ -290,7 +290,7 @@ ul{
 .showreel-container .title{
     text-align: right;
     font-size:46px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .showreel-container .main{
