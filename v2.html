@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="row justify-content-center works">
-            <div class="work" video="449227620">
+            <div class="work" video="449227620" index="0">
                 <div class="thumb">
                     <img src="assets/v2/works/showreel.jpg" />
                 </div>
@@ -91,7 +91,7 @@
                     <p></p>
                 </div>
             </div>
-            <div class="work" video="152686891">
+            <div class="work" video="152686891" index="1">
                 <div class="thumb">
                     <img src="assets/v2/works/14engel.jpg"/>
                 </div>
@@ -100,7 +100,7 @@
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector. While this generates a more specific selector, column padding can still be further customized with spacing utilities.</p>
                 </div>
             </div>
-            <div class="work" video="290528925">
+            <div class="work" video="290528925" index="2">
                 <div class="thumb">
                     <img src="assets/v2/works/reverie.jpg"/>
                 </div>
@@ -109,7 +109,7 @@
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector.</p>
                 </div>
             </div>
-            <div class="work" video="226959500">
+            <div class="work" video="226959500" index="3">
                 <div class="thumb">
                     <img src="assets/v2/works/killit.jpg"/>
                 </div>
@@ -118,7 +118,7 @@
                     <p></p>
                 </div>
             </div>
-            <div class="work" video="212126145">
+            <div class="work" video="212126145" index="4">
                 <div class="thumb">
                     <img src="assets/v2/works/peter.jpg"/>
                 </div>
@@ -231,8 +231,9 @@ var options = {
     id: 449227620,
     width: 760,
 };
+var slider;
 $( document ).ready(function() {
-    var slider = tns({
+    slider = tns({
         container: '.works',
         items: 1,
         gutter: 10,
@@ -248,10 +249,12 @@ $( document ).ready(function() {
         console.log('played the video!');
     });
 
-    $(".work").bind( "click", function() {
-        video_id = $(this).attr('video');
-        player.loadVideo(video_id);
-        player.play();
+    $(".work ").on( "click", function() {
+        slider.goTo($(this).attr('index'));
+        player.loadVideo($(this).attr('video')).then(function(id) {
+            player.play();
+        });
+
     });
 });
 </script>
