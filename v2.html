@@ -79,10 +79,22 @@
         </div>
         <div class="row justify-content-center main">
             <div class="col-md-8 thumb">
+                <video width="100%" height="auto" controls>
+                    <source src="assets/v2/works/reverie.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
         <div class="row justify-content-center works">
-            <div>
+            <div class="work" video="assets/v2/works/reverie.mp4">
+                <div class="thumb">
+                    <img src="assets/v2/works/reverie.png" />
+                </div>
+                <div class="info">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+            <div class="work" video="assets/v2/works/reverie.mp4">
                 <div class="thumb">
                 </div>
                 <div class="info">
@@ -90,35 +102,33 @@
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector. While this generates a more specific selector, column padding can still be further customized with spacing utilities.</p>
                 </div>
             </div>
-            <div>
+            <div class="work" video="assets/v2/works/bullet.mp4">
                 <div class="thumb">
+                    <img src="assets/v2/works/bullet.png"/>
                 </div>
                 <div class="info">
                     <strong>BULLET</strong>
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector.</p>
                 </div>
             </div>
-            <div>
+            <div class="work" video="assets/v2/works/mermaid.mp4">
                 <div class="thumb">
+                    <img src="assets/v2/works/mermaid.png"/>
                 </div>
                 <div class="info">
                     <strong></strong>
                     <p></p>
                 </div>
             </div>
-            <div>
+            <div class="work" video="assets/v2/works/abre_sus_caricias.mp4">
                 <div class="thumb">
+                    <img src="assets/v2/works/abre_sus_caricias.png"/>
                 </div>
                 <div class="info">
                     <strong></strong>
                     <p></p>
                 </div>
             </div>
-        </div>
-        <div class="my-slider">
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
         <!-- or ul.my-slider > li -->
     </div>
@@ -215,13 +225,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 <script type="text/javascript">
-      var slider = tns({
-    container: '.works',
-    items: 1,
-    gutter: 10,
-    fixedWidth: 300,
-    edgePadding: 20,
-    controls: false
-  });
+$( document ).ready(function() {
+    var slider = tns({
+        container: '.works',
+        items: 1,
+        gutter: 10,
+        fixedWidth: 300,
+        edgePadding: 20,
+        controls: false,
+        nav:false,
+        mouseDrag: true,
+    });
+
+    $(".work").bind( "click", function() {
+        video_src = $(this).attr('video');
+        $main_player = $('.main video');
+        $main_player.attr('src', video_src);
+        $main_player[0].load();
+        $main_player[0].play();
+    });
+});
 </script>
 </html>

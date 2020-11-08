@@ -298,8 +298,7 @@ ul{
 }
 
 .showreel-container .main .thumb{
-    background-color: #f15a24;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .showreel-container .works div{
@@ -308,7 +307,14 @@ ul{
 .showreel-container .works .thumb{
     background-color: #f15a24;
     height: 180px;
+    cursor: pointer;
 }
+
+.showreel-container .works .thumb img{
+    height: 100%;
+    width: 100%;
+}
+
 
 .showreel-container .works .info strong{
     font-size: 30px;
