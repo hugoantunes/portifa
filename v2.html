@@ -78,54 +78,52 @@
             </div>
         </div>
         <div class="row justify-content-center main">
-            <div class="col-md-8 thumb">
-                <video width="100%" height="auto" controls>
-                    <source src="assets/v2/works/reverie.mp4" type="video/mp4">
-                </video>
+            <div class="col-md-8" id="main-player">
             </div>
         </div>
         <div class="row justify-content-center works">
-            <div class="work" video="assets/v2/works/reverie.mp4">
+            <div class="work" video="449227620">
                 <div class="thumb">
-                    <img src="assets/v2/works/reverie.png" />
+                    <img src="assets/v2/works/showreel.jpg" />
                 </div>
                 <div class="info">
-                    <strong></strong>
+                    <strong>Showreel</strong>
                     <p></p>
                 </div>
             </div>
-            <div class="work" video="assets/v2/works/reverie.mp4">
+            <div class="work" video="152686891">
                 <div class="thumb">
+                    <img src="assets/v2/works/14engel.jpg"/>
                 </div>
                 <div class="info">
-                    <strong>FRIDAY</strong>
+                    <strong>14 Engel</strong>
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector. While this generates a more specific selector, column padding can still be further customized with spacing utilities.</p>
                 </div>
             </div>
-            <div class="work" video="assets/v2/works/bullet.mp4">
+            <div class="work" video="290528925">
                 <div class="thumb">
-                    <img src="assets/v2/works/bullet.png"/>
+                    <img src="assets/v2/works/reverie.jpg"/>
                 </div>
                 <div class="info">
-                    <strong>BULLET</strong>
+                    <strong>Reverie</strong>
                     <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector.</p>
                 </div>
             </div>
-            <div class="work" video="assets/v2/works/mermaid.mp4">
+            <div class="work" video="226959500">
                 <div class="thumb">
-                    <img src="assets/v2/works/mermaid.png"/>
+                    <img src="assets/v2/works/killit.jpg"/>
                 </div>
                 <div class="info">
-                    <strong></strong>
+                    <strong>KILL IT. SKIN IT. WEAR IT.</strong>
                     <p></p>
                 </div>
             </div>
-            <div class="work" video="assets/v2/works/abre_sus_caricias.mp4">
+            <div class="work" video="212126145">
                 <div class="thumb">
-                    <img src="assets/v2/works/abre_sus_caricias.png"/>
+                    <img src="assets/v2/works/peter.jpg"/>
                 </div>
                 <div class="info">
-                    <strong></strong>
+                    <strong>Pretty stories & funny pictures</strong>
                     <p></p>
                 </div>
             </div>
@@ -219,12 +217,20 @@
 </section>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="assets/jquery/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 <script type="text/javascript">
+var options = {
+    title: false,
+    byline: false,
+    id: 449227620,
+    width: 760,
+    loop: true
+};
 $( document ).ready(function() {
     var slider = tns({
         container: '.works',
@@ -237,12 +243,15 @@ $( document ).ready(function() {
         mouseDrag: true,
     });
 
+    var player = new Vimeo.Player('main-player', options);
+    player.on('play', function() {
+        console.log('played the video!');
+    });
+
     $(".work").bind( "click", function() {
-        video_src = $(this).attr('video');
-        $main_player = $('.main video');
-        $main_player.attr('src', video_src);
-        $main_player[0].load();
-        $main_player[0].play();
+        video_id = $(this).attr('video');
+        player.loadVideo(video_id);
+        player.play();
     });
 });
 </script>
