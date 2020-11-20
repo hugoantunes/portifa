@@ -9,14 +9,12 @@
 }
 
 @font-face{
-    font-family: 'source-serif-variable';
-    font-weight: 200 900;
+    font-family: 'source-serif-semibold';
     font-style: normal;
     font-stretch: normal;
-    src: url('../fonts/SourceSerifVariable-Roman.ttf.woff2') format('woff2'),
-         url('../fonts/SourceSerifVariable-Roman.ttf.woff') format('woff'),
-         url('../fonts/SourceSerifVariable-Roman.ttf') format('truetype');
+    src: url('../fonts/SourceSerifPro-Semibold.ttf') format('truetype');
 }
+
 @media (max-width: 370px) {
     .header-section {
         padding-bottom: 20px;
@@ -140,18 +138,12 @@
 @media (min-width: 1200px) {
     /*header*/
     .header-section{
-        padding-bottom: 10px;
+        padding-bottom: 60px;
         background-position: top;
+        background-size: cover;
     }
     .header-container{
-        padding-top: 30px;
-    }
-    .eye{
-        font-size: 75px;
-    }
-    .eye img{
-        height: 140px;
-        margin-right: 15px;
+
     }
     /*end header*/
 
@@ -206,7 +198,7 @@
     text-align: right;
 }
 body{
-    font-family: "source-serif-variable";
+    font-family: "source-serif-semibold";
     font-weight: lighter;
     color: #fff;
 }
@@ -227,8 +219,14 @@ ul{
     background-image: url(header1.svg);
 }
 
-.eye {
-    color: #ff7bac;
+.header-container ul.navbar-nav{
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+a.nav-link {
+    font-family: 'source-serif-semibold';
+    color: #ff7bac !important;
 }
 
 /*welcome*/
