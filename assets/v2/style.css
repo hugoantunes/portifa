@@ -191,8 +191,8 @@
 
     /* cv */
     .cv-section{
-        background-position: bottom;
-        padding-bottom: 355px;
+        background-position: center 500px;
+        padding-bottom: 450px;
     }
     /*end cv*/
 
@@ -373,20 +373,15 @@ a.nav-link {
 }
 
 .cv-section .projects strong{
-    font-size: 30px;
-    letter-spacing: 1px;
 }
 
 .cv-section .projects .jobs{
-    font-size: 21px;
-    line-height: 1.7rem;
-    letter-spacing: 1px;
 }
 /*end cv*/
 
 /*contact*/
 .contact-section{
-    background-color: #718FC1;
+    background-color: #718FC0;
     background-image: url(header6.svg);
     background-position: bottom;
     background-repeat: no-repeat;
