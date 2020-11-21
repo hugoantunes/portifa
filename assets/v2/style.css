@@ -149,7 +149,7 @@
 
     /*welcome*/
     .welcome-section{
-        padding-bottom: 180px;
+        padding-bottom: 250px;
         padding-top: 50px;
         background-position: bottom;
     }
@@ -172,6 +172,13 @@
     .xp-section{
         background-position: bottom;
         padding-bottom: 230px;
+    }
+    .xp-section img{
+        margin: auto;
+        width: 100%;
+    }
+    .xp-section img.right{
+        transform: scaleX(-1);
     }
     /*end xp*/
 
@@ -227,6 +234,7 @@ ul{
 a.nav-link {
     font-family: 'source-serif-semibold';
     color: #ff7bac !important;
+    font-size: 21px;
 }
 
 /*welcome*/
@@ -238,6 +246,8 @@ a.nav-link {
 
 .welcome-container{
     color: #f15a24;
+    text-align: center;
+    line-height: 40px;
 }
 
 
@@ -248,9 +258,10 @@ a.nav-link {
     font-size: 49px;
 }
 
-.welcome-container .name{
-    text-align: center;
-    line-height: 40px;
+.welcome-container img{
+    width: 50%;
+    margin: 14px auto;
+    display: block;
 }
 
 /*expertise*/
