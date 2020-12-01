@@ -199,7 +199,7 @@
 
     /* cv */
     .cv-section{
-        background-position: bottom;
+        background-position: center bottom -1px;
         padding-bottom: 450px;
     }
     /*end cv*/
@@ -427,7 +427,7 @@ a.nav-link {
 .contact-section{
     background-color: #718FC0;
     background-image: url(header6.svg);
-    background-position: bottom;
+    background-position: center bottom -1px;
     background-repeat: no-repeat;
     padding-bottom: 60px;
 }
