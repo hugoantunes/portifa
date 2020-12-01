@@ -107,73 +107,57 @@
             <div class="col-md-10" id="main-player">
             </div>
         </div>
-        <div class="container-fluid desktop">
+        <div class="container-fluid works">
+            <img class="arrow left" src="assets/v2/arrow.svg" />
+            <img class="arrow right" src="assets/v2/arrow.svg" />
             <div class="row flex-row flex-nowrap">
-                <div class="col-4">
-                    <div class="card card-block">Card</div>
+                <div class="col-md-4 work" video="449227620" index="0">
+                    <div class="thumb">
+                        <img src="assets/v2/works/showreel.jpg" />
+                    </div>
+                    <div class="info">
+                        <strong>Showreel</strong>
+                        <p></p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="card card-block">Card</div>
+                <div class="col-md-4 work" video="152686891" index="1">
+                    <div class="thumb">
+                        <img src="assets/v2/works/14engel.jpg"/>
+                    </div>
+                    <div class="info">
+                        <strong>14 Engel</strong>
+                        <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector. While this generates a more specific selector, column padding can still be further customized with spacing utilities.</p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="card card-block">Card</div>
+                <div class="col-md-4 work" video="290528925" index="2">
+                    <div class="thumb">
+                        <img src="assets/v2/works/reverie.jpg"/>
+                    </div>
+                    <div class="info">
+                        <strong>Reverie</strong>
+                        <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector.</p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="card card-block">Card</div>
+                <div class="col-md-4 work" video="226959500" index="3">
+                    <div class="thumb">
+                        <img src="assets/v2/works/killit.jpg"/>
+                    </div>
+                    <div class="info">
+                        <strong>KILL IT. SKIN IT. WEAR IT.</strong>
+                        <p></p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="card card-block">Card</div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center works mobile">
-            <div class="col-md-4 work" video="449227620" index="0">
-                <div class="thumb">
-                    <img src="assets/v2/works/showreel.jpg" />
-                </div>
-                <div class="info">
-                    <strong>Showreel</strong>
-                    <p></p>
-                </div>
-            </div>
-            <div class="col-md-4 work" video="152686891" index="1">
-                <div class="thumb">
-                    <img src="assets/v2/works/14engel.jpg"/>
-                </div>
-                <div class="info">
-                    <strong>14 Engel</strong>
-                    <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector. While this generates a more specific selector, column padding can still be further customized with spacing utilities.</p>
-                </div>
-            </div>
-            <div class="col-md-4 work" video="290528925" index="2">
-                <div class="thumb">
-                    <img src="assets/v2/works/reverie.jpg"/>
-                </div>
-                <div class="info">
-                    <strong>Reverie</strong>
-                    <p>Here’s the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via attribute selector.</p>
-                </div>
-            </div>
-            <div class="col-md-4 work" video="226959500" index="3">
-                <div class="thumb">
-                    <img src="assets/v2/works/killit.jpg"/>
-                </div>
-                <div class="info">
-                    <strong>KILL IT. SKIN IT. WEAR IT.</strong>
-                    <p></p>
-                </div>
-            </div>
-            <div class="col-md-4 work" video="212126145" index="4">
-                <div class="thumb">
-                    <img src="assets/v2/works/peter.jpg"/>
-                </div>
-                <div class="info">
-                    <strong>Pretty stories & funny pictures</strong>
-                    <p></p>
+                <div class="col-md-4 work" video="212126145" index="4">
+                    <div class="thumb">
+                        <img src="assets/v2/works/peter.jpg"/>
+                    </div>
+                    <div class="info">
+                        <strong>Pretty stories & funny pictures</strong>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- or ul.my-slider > li -->
     </div>
 </section>
 <section class="cv-section" id="bio" data-rv-view="171">
@@ -276,17 +260,17 @@ window.mobileCheck = function() {
   return check;
 };
 
-if (mobileCheck()){
-    var x = document.getElementsByClassName("desktop");
-    for (let item of x) {
-        item.remove()
-    }
-} else {
-    var x = document.getElementsByClassName("mobile");
-    for (let item of x) {
-        item.remove()
-    }
-}
+// if (mobileCheck()){
+//     var x = document.getElementsByClassName("desktop");
+//     for (let item of x) {
+//         item.remove()
+//     }
+// } else {
+//     var x = document.getElementsByClassName("mobile");
+//     for (let item of x) {
+//         item.remove()
+//     }
+// }
 
 var options = {
     title: false,
@@ -304,7 +288,23 @@ $( document ).ready(function() {
         player.loadVideo($(this).attr('video')).then(function(id) {
             player.play();
         });
+    });
 
+    $rightArrow = $('img.arrow.right');
+    $leftArrow = $('img.arrow.left');
+    var currentPage = 0;
+    $rightArrow.on("click", function(){
+        $leftArrow.show();
+        currentPage++;
+        $(".works .row").addClass('pagina'+ currentPage)
+        $rightArrow.hide();
+    });
+
+    $leftArrow.on("click", function(){
+        $rightArrow.show();
+        $(".works .row").removeClass('pagina'+ currentPage)
+        currentPage--;
+        $leftArrow.hide();
     });
 });
 </script>
