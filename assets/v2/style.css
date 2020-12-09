@@ -63,7 +63,7 @@
     .header-section{
         padding-bottom: 15px;
         padding-top: 14px;
-        background-position: -80px 0px;
+        background-position:center top;
         background-size: 930px;
     }
     .eye {
@@ -80,7 +80,7 @@
         background-size: 880px;
         padding-bottom: 98px;
         padding-top: 60px;
-        background-position: -200px bottom;
+        background-position:center bottom -1px;
     }
     .welcome-container .introduction{
 
@@ -100,7 +100,7 @@
 
     /*XP*/
     .xp-section {
-        background-position: -410px bottom;
+        background-position:center bottom -1px;
         padding-bottom: 150px;
         background-size: 890px;
         padding-top: 30px;
@@ -109,7 +109,7 @@
 
     /*showreel*/
     .showreel-section{
-        background-position: -889px bottom;
+        background-position:center bottom -1px;
         background-size: 1930px;
         padding-bottom: 190px;
     }
@@ -118,7 +118,7 @@
     /* cv */
     .cv-section {
         background-size: 900px;
-        background-position: -460px bottom;
+        background-position:center bottom -1px;
         padding-bottom: 250px;
     }
     /*end cv*/
@@ -147,7 +147,7 @@
     /*header*/
     .header-section{
         padding-bottom: 60px;
-        background-position: top;
+        background-position:center top;
         background-size: cover;
     }
     .header-container{
@@ -159,7 +159,7 @@
     .welcome-section{
         padding-bottom: 250px;
         padding-top: 50px;
-        background-position: bottom;
+        background-position:center bottom -1px;
     }
     .welcome-container .introduction{
 
@@ -178,28 +178,21 @@
     /*end welcome*/
      /* xp */
     .xp-section{
-        background-position: bottom;
+        background-position:center bottom -1px;
         padding-bottom: 230px;
-    }
-    .xp-section img{
-        margin: auto;
-        width: 100%;
-    }
-    .xp-section img.right{
-        transform: scaleX(-1);
     }
     /*end xp*/
 
     /*showreel*/
     .showreel-section{
-        background-position: center bottom;
+        background-position:center bottom -1px;
         padding-bottom: 120px;
     }
     /*end showreel*/
 
     /* cv */
     .cv-section{
-        background-position: center bottom -1px;
+        background-position:center bottom -1px;
         padding-bottom: 450px;
     }
     /*end cv*/
@@ -235,6 +228,7 @@ ul{
     background-color: #ff7bac;
     background-repeat: no-repeat;
     background-image: url(header1.svg);
+    background-position: center top;
 }
 
 .header-container ul.navbar-nav{
@@ -253,6 +247,7 @@ a.nav-link {
     background-color: #ff7bac;
     background-image: url(header2.svg);
     background-repeat: no-repeat;
+    background-position: center bottom -1px;
 }
 
 .welcome-container{
@@ -280,6 +275,15 @@ a.nav-link {
     background-color: #12A05C;
     background-image: url(header3.svg);
     background-repeat: no-repeat;
+    background-position: center bottom -1px;
+}
+
+.xp-section img{
+    margin: auto;
+    width: 150%;
+}
+.xp-section img.right{
+    transform: scaleX(-1);
 }
 
 .xp-container strong{
@@ -304,6 +308,7 @@ a.nav-link {
     background-color: #FFD73D;
     background-image: url(header4.svg);
     background-repeat: no-repeat;
+    background-position: center bottom -1px;
     padding-top: 20px;
 }
 
@@ -388,6 +393,7 @@ a.nav-link {
     background-color: #702855;
     background-image: url(header5.svg);
     background-repeat: no-repeat;
+    background-position: center bottom -1px;
 }
 
 .cv-container .title{
@@ -427,7 +433,7 @@ a.nav-link {
 .contact-section{
     background-color: #718FC0;
     background-image: url(header6.svg);
-    background-position: center bottom -1px;
+    background-position:center bottom -1px;
     background-repeat: no-repeat;
     padding-bottom: 60px;
 }
