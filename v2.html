@@ -275,10 +275,8 @@ if (mobileCheck()){
                 responsive: true,
                 id: id,
             };
-            console.log(options)
             thumb = $(this).find('.thumb')[0];
             $(this).find('.thumb').find('img').remove()
-            console.log(thumb)
             new Vimeo.Player(thumb, options);
         });
     });

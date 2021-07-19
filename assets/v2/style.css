@@ -46,6 +46,10 @@
     .showreel-container .title {
         font-size: 38px!important;
     }
+    .showreel-container .works .thumb{
+        margin-bottom: 25px;
+    }
+
     .cv-section strong {
         font-size: 38px!important;
     }
@@ -120,6 +124,9 @@
         background-position:center bottom -1px;
         background-size: 1930px;
         padding-bottom: 190px;
+    }
+    .showreel-container .works .thumb{
+        margin-bottom: 25px;
     }
     /*end showreel*/
 
@@ -380,7 +387,6 @@ a.nav-link {
 
 
 .showreel-container .works .thumb{
-    background-color: #f15a24;
     height: 180px;
     cursor: pointer;
 }
