@@ -70,9 +70,7 @@
     /*header*/
     .header-section{
         padding-bottom: 15px;
-        padding-top: 14px;
-        background-position:center top;
-        background-size: 930px;
+        padding-top: 35px;
     }
     .eye {
         font-size: 60px;
@@ -87,8 +85,6 @@
     .welcome-section{
         background-size: 880px;
         padding-bottom: 98px;
-        padding-top: 60px;
-        background-position:center bottom -1px;
     }
     .welcome-container .introduction{
 
@@ -155,7 +151,14 @@
 
 }
 
+/* desktop */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .header-section {
+        background-repeat: no-repeat;
+        background-image: url(header1.svg);
+        background-position: center top;
+    }
+
     .xp-section img{
         width: 150%;
     }
@@ -168,6 +171,9 @@
         padding-bottom: 60px;
         background-position:center top;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(header1.svg);
+        background-position: center top;
     }
     .header-container{
 
@@ -245,12 +251,42 @@ ul{
     list-style: none;
     padding: 0;
 }
+.navbar{
+    transition: background-color 0.3s;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url(menu/menu_bar.svg);
+}
+.navbar-light .navbar-toggler {
+    border: none;
+}
+.navbar{
+    text-align: center;
+}
+
+.navbar .nav-bar-close-icon{
+    display: none;
+    background-image: url(menu/menu_x.svg);
+}
+
+.navbar-toggler.collapsed .nav-bar-close-icon {
+    display: none;
+ }
+
+ .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: none;
+ }
+
+ .navbar-toggler:not(.collapsed) .nav-bar-close-icon.navbar-toggler-icon {
+    display: block;
+ }
+
+ .purple-bg{
+    background-color: #702855;
+ }
 
 .header-section {
     background-color: #ff7bac;
-    background-repeat: no-repeat;
-    background-image: url(header1.svg);
-    background-position: center top;
 }
 
 .header-container ul.navbar-nav{
