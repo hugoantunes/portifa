@@ -71,6 +71,7 @@
             <div class="col-md-8">
                 <p>about</p>
                 <strong>aelnaan</strong>
+                <img class="right mobile" src="assets/v2/hallo.gif">
             </div>
             <div class="col-md-2 desktop">
                 <img class="right" src="assets/v2/hallo.gif">
@@ -103,7 +104,7 @@
                 </strong>
             </div>
         </div>
-        <div class="row justify-content-center main">
+        <div class="row justify-content-center main desktop">
             <div class="col-md-10" id="main-player">
                 <img class="arrow left" src="assets/v2/arrow.svg" />
                 <img class="arrow right" src="assets/v2/arrow.svg" />
@@ -258,52 +259,55 @@ window.mobileCheck = function() {
   return check;
 };
 
-// if (mobileCheck()){
-//     var x = document.getElementsByClassName("desktop");
-//     for (let item of x) {
-//         item.remove()
-//     }
-// } else {
-//     var x = document.getElementsByClassName("mobile");
-//     for (let item of x) {
-//         item.remove()
-//     }
-// }
-
-var options = {
-    title: false,
-    byline: false,
-    responsive: true,
-    id: 449227620,
-};
-$( document ).ready(function() {
-    var player = new Vimeo.Player('main-player', options);
-    player.on('play', function() {
-        console.log('played the video!');
+if (mobileCheck()){
+    var x = document.getElementsByClassName("desktop");
+    for (let item of x) {
+        item.remove()
+    }
+    $( document ).ready(function() {
+        let $worksRow = $('.works .row');
+        $worksRow.removeClass('flex-row').removeClass('flex-nowrap');
     });
+} else { // DESKTOP
+    var x = document.getElementsByClassName("mobile");
+    for (let item of x) {
+        item.remove()
+    }
+    var options = {
+        title: false,
+        byline: false,
+        responsive: true,
+        id: 449227620,
+    };
+    $( document ).ready(function() {
+        var player = new Vimeo.Player('main-player', options);
+        player.on('play', function() {
+            console.log('played the video!');
+        });
 
-    $(".work ").on( "click", function() {
-        player.loadVideo($(this).attr('video')).then(function(id) {
-            player.play();
+        $(".work ").on( "click", function() {
+            player.loadVideo($(this).attr('video')).then(function(id) {
+                player.play();
+            });
+        });
+
+        $rightArrow = $('img.arrow.right');
+        $leftArrow = $('img.arrow.left');
+        var currentPage = 0;
+        $rightArrow.on("click", function(){
+            $leftArrow.show();
+            currentPage++;
+            $(".works .row").addClass('pagina'+ currentPage)
+            $rightArrow.hide();
+        });
+
+        $leftArrow.on("click", function(){
+            $rightArrow.show();
+            $(".works .row").removeClass('pagina'+ currentPage)
+            currentPage--;
+            $leftArrow.hide();
         });
     });
-
-    $rightArrow = $('img.arrow.right');
-    $leftArrow = $('img.arrow.left');
-    var currentPage = 0;
-    $rightArrow.on("click", function(){
-        $leftArrow.show();
-        currentPage++;
-        $(".works .row").addClass('pagina'+ currentPage)
-        $rightArrow.hide();
-    });
-
-    $leftArrow.on("click", function(){
-        $rightArrow.show();
-        $(".works .row").removeClass('pagina'+ currentPage)
-        currentPage--;
-        $leftArrow.hide();
-    });
-});
+}
 </script>
 </html>
