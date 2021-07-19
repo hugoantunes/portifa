@@ -267,6 +267,20 @@ if (mobileCheck()){
     $( document ).ready(function() {
         let $worksRow = $('.works .row');
         $worksRow.removeClass('flex-row').removeClass('flex-nowrap');
+        $(".work ").each(function( index ) {
+            var id = parseInt($(this).attr('video'));
+            var options = {
+                title: false,
+                byline: false,
+                responsive: true,
+                id: id,
+            };
+            console.log(options)
+            thumb = $(this).find('.thumb')[0];
+            $(this).find('.thumb').find('img').remove()
+            console.log(thumb)
+            new Vimeo.Player(thumb, options);
+        });
     });
 } else { // DESKTOP
     var x = document.getElementsByClassName("mobile");
