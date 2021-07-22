@@ -426,28 +426,28 @@ a.nav-link {
     transition: transform 1s ease;
 }
 
-.showreel-container .arrow{
+.showreel-container .works .arrow{
     position: absolute;
-    width: 70px;
+    width: 30px;
     z-index: 999;
-    top: 50%;
+    top: 0px;
     cursor: pointer;
     transition: display 10s ease
 }
-.showreel-container .left{
-    left: -110px;
+.showreel-container .works .left{
+    left: 25px;
     transform: rotate(90deg) scaleY(-1);
     display: none;
 }
-.showreel-container .right{
-    right: -110px;
+.showreel-container .works .right{
+    right: 25px;
     transform: rotate(90deg);
 }
-.showreel-container .left:hover{
-    left: -115px;
+.showreel-container .works .left:hover{
+    left: 16px;
 }
-.showreel-container .right:hover{
-    right: -115px;
+.showreel-container .works .right:hover{
+    right: 16px;
 }
 
 .works .pagina1{
