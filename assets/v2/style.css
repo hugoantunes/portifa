@@ -29,6 +29,9 @@
     .welcome-section {
         background-size: 805px!important;
     }
+    .welcome-container img{
+        width: 80%;
+    }
     .welcome-container .introduction strong{
         font-size: 40px!important;
     }
@@ -38,7 +41,14 @@
 
     .xp-container .title {
         font-size: 37px!important;
+        margin-bottom: 30px;
     }
+
+    .xp-container .description {
+        font-size: 19px;
+        line-height: 1.5rem;
+    }
+
     .xp-section img{
         width: 50%;
     }
@@ -49,12 +59,23 @@
     .showreel-container .works .thumb{
         margin-bottom: 25px;
     }
+    .showreel-container .work{
+        margin-bottom: 20px;
+    }
+    .welcome-container .introduction p{
+        font-size: 30px;
+    }
 
     .cv-section strong {
         font-size: 38px!important;
+        line-height: 1em;
+    }
+    .cv-section li{
+        margin-bottom: 10px;
+        line-height: 1.2em;
     }
     .contact-section strong {
-        line-height: 1.3em;
+        line-height: 1em;
     }
     .end-section span {
         padding-top: 5px;
@@ -62,6 +83,12 @@
     }
     .contact-section{
         background-image: url(header6_mobile.svg);
+    }
+    .contact-section p{
+        margin: 0;
+    }
+    .contact-section .email {
+        margin-top: 10px;
     }
     .contact-section a{
         color: #718FC0;
@@ -88,9 +115,13 @@
     /*end header*/
 
     /*welcome*/
+    .welcome-container img{
+        width: 80%;
+    }
+
     .welcome-section{
         background-size: 880px;
-        padding-bottom: 98px;
+        padding-bottom: 138px;
     }
     .welcome-container .introduction{
 
@@ -106,6 +137,14 @@
         height: 35px;
         margin-left: 0px;
     }
+    .welcome-container .introduction p{
+        font-size: 30px;
+    }
+    .xp-container .title{
+        margin-bottom: 30px;
+    }
+
+}
     /*end welcome*/
 
     /*XP*/
@@ -114,6 +153,11 @@
         padding-bottom: 150px;
         background-size: 890px;
         padding-top: 30px;
+    }
+
+    .xp-container .description {
+        font-size: 19px;
+        line-height: 1.5rem;
     }
 
     .xp-section img{
@@ -127,6 +171,9 @@
         background-size: 1930px;
         padding-bottom: 190px;
     }
+    .showreel-container .work{
+        margin-bottom: 20px;
+    }
     .showreel-container .works .thumb{
         margin-bottom: 25px;
     }
@@ -138,6 +185,13 @@
         background-position:center bottom -1px;
         padding-bottom: 250px;
     }
+    .cv-section strong {
+        line-height: 1em;
+    }
+    .cv-section li{
+        margin-bottom: 10px;
+        line-height: 1.2em;
+    }
     /*end cv*/
     .contact-section .phone{
         height: 170px;
@@ -145,6 +199,15 @@
 
     .contact-section{
         background-image: url(header6_mobile.svg);
+    }
+    .contact-section p{
+        margin: 0;
+    }
+    .contact-section strong {
+        line-height: 1em;
+    }
+    .contact-section .email {
+        margin-top: 10px;
     }
     .contact-section a{
         color: #718FC0;
@@ -163,10 +226,27 @@
         background-image: url(header1.svg);
         background-position: center top;
     }
-
+    .welcome-container img{
+        width: 50%;
+    }
+    .welcome-container .introduction p{
+        font-size: 40px;
+    }
+    .xp-container .description{
+        font-size: 21px;
+        line-height: 1.7rem;
+    }
     .xp-section img{
         width: 150%;
     }
+
+    .showreel-container .title{
+        margin-bottom: 40px;
+    }
+    .showreel-container .works .thumb{
+        margin-bottom: 10px;
+    }
+
     .contact-section{
         background-image: url(header6.svg);
         padding-bottom: 60px;
@@ -198,6 +278,9 @@
     /*end header*/
 
     /*welcome*/
+    .welcome-container img{
+        width: 50%;
+    }
     .welcome-section{
         padding-bottom: 250px;
         padding-top: 50px;
@@ -217,6 +300,9 @@
         height: 50px;
         margin-left: 20px;
     }
+    .welcome-container .introduction p{
+        font-size: 40px;
+    }
     /*end welcome*/
      /* xp */
     .xp-section{
@@ -226,12 +312,24 @@
     .xp-section img{
         width: 150%;
     }
+
+    .xp-container .description{
+        font-size: 21px;
+        line-height: 1.7rem;
+    }
+
     /*end xp*/
 
     /*showreel*/
     .showreel-section{
         background-position:center bottom -1px;
         padding-bottom: 120px;
+    }
+    .showreel-container .title{
+        margin-bottom: 40px;
+    }
+    .showreel-container .works .thumb{
+        margin-bottom: 10px;
     }
     /*end showreel*/
 
@@ -310,6 +408,7 @@ ul{
 
 .purple-bg{
     background-color: #702855;
+    padding-bottom: 46px;
  }
 
 .header-section {
@@ -354,16 +453,11 @@ a.nav-link {
     line-height: 40px;
 }
 
-
-.welcome-container .introduction p{
-    font-size: 40px;
-}
 .welcome-container .introduction strong{
     font-size: 49px;
 }
 
 .welcome-container img{
-    width: 50%;
     margin: 20px auto 30px auto;
     display: block;
 }
@@ -399,8 +493,6 @@ a.nav-link {
 }
 
 .xp-container .description{
-    font-size: 21px;
-    line-height: 1.7rem;
     letter-spacing: 1px;
 }
 
@@ -416,7 +508,6 @@ a.nav-link {
 .showreel-container .title{
     text-align: center;
     font-size:46px;
-    margin-bottom: 40px;
 }
 
 .showreel-container .main{
@@ -472,7 +563,6 @@ a.nav-link {
 .showreel-container .works .thumb{
     height: 180px;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .showreel-container .works .thumb img{
