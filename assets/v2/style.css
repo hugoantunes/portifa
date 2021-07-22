@@ -143,8 +143,6 @@
     .xp-container .title{
         margin-bottom: 30px;
     }
-
-}
     /*end welcome*/
 
     /*XP*/
@@ -254,6 +252,9 @@
     .contact-section a{
         color: #fff;
     }
+    .contact-section p{
+        line-height: 1em;
+    }
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
@@ -350,6 +351,9 @@
 
     .contact-section a{
         color: #fff;
+    }
+    .contact-section p{
+        line-height: 1em;
     }
 }
 
@@ -640,10 +644,16 @@ a.nav-link {
 .contact-section strong{
     color: #fff;
     font-size: 46px;
+    margin: 0;
 }
+
 .contact-section .call{
     text-align: center;
     margin-top: 50px;
+}
+
+.contact-section strong{
+    letter-spacing: 0.04em;
 }
 .contact-section .email{
     text-align: right;
