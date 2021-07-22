@@ -93,6 +93,9 @@
     .contact-section a{
         color: #718FC0;
     }
+    .end-section footer{
+        font-size: 7px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 575.98px) {
@@ -209,6 +212,9 @@
     }
     .contact-section a{
         color: #718FC0;
+    }
+    .end-section footer{
+        font-size: 7px;
     }
 
 }
@@ -684,6 +690,9 @@ a.nav-link {
 
 /*end*/
 .end-section{
-    display: none;
+    display: block;
+}
+.end-section footer{
+    color: #ff7bac;
 }
 /*end end*/
