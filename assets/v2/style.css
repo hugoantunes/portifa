@@ -454,6 +454,9 @@ a.nav-link {
     transform: translateX(-100%)
 }
 
+.works .pagina2{
+    transform: translateX(-200%)
+}
 
 .showreel-container .works .thumb{
     height: 180px;

@@ -170,7 +170,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
                 <div class="projects">
                     <div><strong>2019</strong></div>
                     <div>REVERIE (ANIMATION)</div>
@@ -183,7 +183,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
                 <div class="projects">
                     <div><strong>2018</strong></div>
                     <div>REVERIE (ANIMATION)</div>
@@ -313,18 +313,24 @@ if (mobileCheck()){
         $rightArrow = $('img.arrow.right');
         $leftArrow = $('img.arrow.left');
         var currentPage = 0;
+        var totalPage = 2
+        console.log(currentPage)
         $rightArrow.on("click", function(){
             $leftArrow.show();
             currentPage++;
             $(".works .row").addClass('pagina'+ currentPage)
-            $rightArrow.hide();
+            if(currentPage == totalPage){
+                $rightArrow.hide();
+            }
         });
 
         $leftArrow.on("click", function(){
             $rightArrow.show();
             $(".works .row").removeClass('pagina'+ currentPage)
             currentPage--;
-            $leftArrow.hide();
+            if(currentPage == 0){
+                $leftArrow.hide();
+            }
         });
     });
 }
