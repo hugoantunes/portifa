@@ -184,7 +184,8 @@
     }
 
     .header-section{
-        padding-bottom: 60px;
+        padding-top: 20px;
+        padding-bottom: 40px;
         background-position:center top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -307,7 +308,7 @@ ul{
     display: block;
  }
 
- .purple-bg{
+.purple-bg{
     background-color: #702855;
  }
 
@@ -316,14 +317,20 @@ ul{
 }
 
 .header-container ul.navbar-nav{
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: center;
     width: 100%;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
 }
 
 a.nav-link {
     font-family: 'source-serif-semibold';
     color: #ff7bac !important;
-    font-size: 21px;
+    font-size: 28px;
 }
 
 .welcome-section,
@@ -357,7 +364,7 @@ a.nav-link {
 
 .welcome-container img{
     width: 50%;
-    margin: 14px auto;
+    margin: 20px auto 30px auto;
     display: block;
 }
 
@@ -383,8 +390,12 @@ a.nav-link {
 .xp-container .title{
     text-align: center;
     font-size: 46px;
-    margin-bottom: 50px;
     letter-spacing: 3px;
+}
+
+.xp-container .title p{
+    line-height: 1em;
+    padding-top: 40px;
 }
 
 .xp-container .description{
@@ -461,6 +472,7 @@ a.nav-link {
 .showreel-container .works .thumb{
     height: 180px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .showreel-container .works .thumb img{
@@ -471,6 +483,7 @@ a.nav-link {
 
 .showreel-container .works .info strong{
     font-size: 30px;
+    line-height: 1em;
 }
 
 .showreel-container .works .info p{
