@@ -336,12 +336,20 @@ window.mobileCheck = function() {
   return check;
 };
 var thumb;
+
 if (mobileCheck()){
+    var yt_loaded = false;
     var x = document.getElementsByClassName("desktop");
     for (let item of x) {
         item.remove()
     }
     function onYouTubeIframeAPIReady() {
+       console.log('oi');
+       yt_loaded = true;
+       loadPlayer();
+
+    }
+    function loadPlayer(){
         new YT.Player('thumb-video-2', {
             width: '100%',
             autoplay: 1,
@@ -376,7 +384,6 @@ if (mobileCheck()){
                 var var_youtube_players = [];
                 console.log(video_id);
                 console.log(id);
-
                 $(this).find('.thumb').find('img').remove()
             }
         });
