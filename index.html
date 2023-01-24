@@ -320,7 +320,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
-<!-- <script src="https://www.youtube.com/iframe_api"></script> -->
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 <script type="text/javascript">
 var viemeo_player
@@ -343,24 +342,6 @@ if (mobileCheck()){
     for (let item of x) {
         item.remove()
     }
-    function onYouTubeIframeAPIReady() {
-       console.log('oi');
-       yt_loaded = true;
-       loadPlayer();
-
-    }
-    function loadPlayer(){
-        new YT.Player('thumb-video-2', {
-            width: '100%',
-            autoplay: 1,
-            videoId: 'dkTBFc3ZdtQ',
-        });
-        new YT.Player('thumb-video-3', {
-            width: '100%',
-            autoplay: 1,
-            videoId: 'Xa8aMuhC104',
-        });
-    }
     $( document ).ready(function() {
         let $worksRow = $('.works .row');
         $worksRow.removeClass('flex-row').removeClass('flex-nowrap');
@@ -379,11 +360,9 @@ if (mobileCheck()){
                 $(this).find('.thumb').find('img').remove()
                 new Vimeo.Player(thumb, options);
             } else {
+                video_iframe = '<iframe width="100%" src="https://www.youtube.com/embed/'+video_id+'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
                 thumb = $(this).find('.thumb')[0];
-                id = $(thumb).attr('id')
-                var var_youtube_players = [];
-                console.log(video_id);
-                console.log(id);
+                id = $(thumb).html(video_iframe)
                 $(this).find('.thumb').find('img').remove()
             }
         });
