@@ -62,6 +62,7 @@
     .showreel-container .work{
         margin-bottom: 20px;
     }
+
     .welcome-container .introduction p{
         font-size: 30px;
     }
@@ -590,6 +591,10 @@ a.nav-link {
     color: #fff;
     line-height: 1.3rem;
     font-weight: normal;
+}
+iframe#youtube-main-player{
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 /*end showreel*/
 
